@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/**/*.py": {
+      "includeFiles": "analytics.db"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
+}
